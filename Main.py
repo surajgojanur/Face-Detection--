@@ -43,3 +43,5 @@ def load_image(x):
 images = images.map(load_image)
 
 images.as_numpy_iterator().next()
+
+type(images)
