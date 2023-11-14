@@ -48,7 +48,3 @@ type(images)
 image_generator = images.batch(4).as_numpy_iterator()
 plot_images = image_generator.next()
 
-fig, ax = plt.subplots(ncols=4, figsize=(20,20))
-for idx, image in enumerate(plot_images):
-    ax[idx].imshow(image) 
-plt.show()
