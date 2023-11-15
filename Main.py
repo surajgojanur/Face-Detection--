@@ -45,6 +45,3 @@ images = images.map(load_image)
 images.as_numpy_iterator().next()
 
 type(images)
-image_generator = images.batch(4).as_numpy_iterator()
-plot_images = image_generator.next()
-
